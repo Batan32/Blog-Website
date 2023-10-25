@@ -118,7 +118,7 @@ def register():
         user = result.scalar()
         if user:
             # User already exists
-            flash("You've already signed up with that email, log in instead!")
+            flash("Vec si registrovan")
             return redirect(url_for('login'))
 
         hash_and_salted_password = generate_password_hash(
