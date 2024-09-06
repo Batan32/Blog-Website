@@ -21,7 +21,7 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 import smtplib
 import os
 
-
+#TODO: initialize Flask
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("FLASK_KEY")
 ckeditor = CKEditor(app)
